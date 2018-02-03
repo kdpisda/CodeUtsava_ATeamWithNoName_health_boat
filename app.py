@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
@@ -16,7 +16,7 @@ app=Flask(__name__)
 
 @app.route('/',methods=['GET'])
 def home():
-	return "Health Boat by Team : ATeamWithNoName"
+	return render_template('home.html')
 
 
 @app.route('/get_suggestions',methods=['GET'])
