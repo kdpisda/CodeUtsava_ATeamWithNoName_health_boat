@@ -16,7 +16,7 @@ app=Flask(__name__)
 
 @app.route('/',methods=['GET'])
 def home():
-	return "Welcome to hack36 . pandas sucks!!"
+	return "Welcome to CodeUtsava 2.0 . ATeamWithNoName :-)!!"
 
 
 @app.route('/get_suggestions',methods=['GET'])
